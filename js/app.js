@@ -38,7 +38,7 @@ class App {
         this.filteredTransactions.forEach(transaction => {
             const customer = this.customers.find(c => c.id === transaction.customer_id);
             const row = document.createElement('tr');
-            row.classList.add('animate__animated', 'animate__fadeIn');
+            row.classList.add('animate_animated', 'animate_fadeIn');
             row.innerHTML = `
                 <td class="customer-name" data-customer-id="${customer.id}">${customer.name}</td>
                 <td>${transaction.date}</td>
